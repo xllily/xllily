@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Liki Shi, frontend systems and AI products" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:0B1020,45:2563EB,100:7C3AED&text=Liki%20Shi&fontColor=FFFFFF&fontSize=54&fontAlignY=38&desc=Frontend%20systems%20%2B%20AI%20products&descSize=18&descAlignY=60&animation=fadeIn" alt="Liki Shi - Frontend systems and AI products" width="100%" />
 </p>
 
 <p align="center">
@@ -7,40 +7,9 @@
   <a href="mailto:xllily.slikij@gmail.com"><img src="https://img.shields.io/badge/Email-xllily.slikij%40gmail.com-111827?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
-I have spent ten years building web and cross-platform products. These days I work on model gateways, streaming voice, tool state and native bridges.
+I build web and cross-platform products where AI APIs, streaming media and native surfaces meet. Recent work includes model gateways, real-time voice, tool state and WebView-to-Kotlin bridges.
 
-I like boundary problems. Recent examples include stopping gateway retries before the first SSE chunk and validating data as it crosses from a Chrome 95 WebView into Kotlin.
-
-十年前端与跨端经验。现在主要做 AI 应用、模型网关、实时语音和车载端集成。
-
-## Systems I can talk about
-
-I keep most current work in private repos and describe the implementation details I can share.
-
-### 01 / Multi-model gateway
-
-`React` `TypeScript` `Go` `MySQL` `Redis` `SSE`
-
-I am building two React apps and the Go API behind them. I use one routing, quota, billing and settlement path for six operation types. The router can change providers until the first SSE chunk; after that point it keeps the active stream so users do not receive duplicate output or charges.
-
-<p align="center">
-  <img src="./assets/gateway-flow.svg" alt="Request lifecycle for a multi-model gateway" width="100%" />
-</p>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>02 / In-vehicle payment agent</h3>
-      <p><code>React</code> <code>Capacitor</code> <code>Kotlin</code> <code>WebSocket</code></p>
-      <p>I built the client around wake-word detection, streaming speech and typed tool results. I validate the WebView bridge with Zod before Android starts a biometric payment or navigation request. I cover the app with 139 TS/TSX and 49 Android test files across four environments.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>03 / Voice-driven digital human</h3>
-      <p><code>React</code> <code>Tauri</code> <code>Three.js</code> <code>Live2D</code></p>
-      <p>I reuse one React business layer across web, desktop and mobile clients. I put the Live2D and VRM runtimes behind an <code>IRenderer</code> interface. I split full-duplex audio, provider fallback and network measurements across five packages.</p>
-    </td>
-  </tr>
-</table>
+Most of the interesting code is private, so this profile stays compact: the problems are first-byte streaming, retry boundaries, native handoffs, crash rates and payment flows.
 
 ## Working set
 
